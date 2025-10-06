@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+.container .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .content .tmdb {
+  width: 50%;
+  margin: 20px auto 100px auto;
+  display: block;
+}
+.container .content #filmSearch {
+  width: 600px;
+  height: 60px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin: 0 auto 80px auto;
+  display: block;
+  font-size: 20px;
+}
+.container .content #resultsBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+  gap: 40px;
+}
+.container .content #resultsBox a,
+.container .content #resultsBox a:hover,
+.container .content #resultsBox a:active,
+.container .content #resultsBox a:visited,
+.container .content #resultsBox a:focus {
+  color: black;
+  text-decoration: none;
+}
+.container .content #resultsBox .movieContainer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid cyan;
+}
+.container .content #resultsBox .movieContainer img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1/1.5;
+  padding-bottom: 4px;
+  border-bottom: 2px solid black;
+}
+.container .content #resultsBox .movieContainer .movieTitle {
+  font-size: 25px;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+.container .content #resultsBox .movieContainer .movieReleaseDate {
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .container .content {
+    width: 768px;
+  }
+  .container .content #resultsBox {
+    gap: 30px;
+  }
+  .container .content #resultsBox .movieContainer {
+    width: 30%;
+  }
+  .container .content #resultsBox .movieContainer .movieTitle {
+    font-size: 20px;
+  }
+  .container .content #resultsBox .movieContainer .movieReleaseDate {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .container .content {
+    width: 100%;
+  }
+  .container .content .tmdb {
+    margin-bottom: 40px;
+  }
+  .container .content #filmSearch {
+    width: 80%;
+    margin-bottom: 60px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  .container .content #resultsBox {
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container .content #filmSearch {
+    margin-bottom: 30px;
+  }
+  .container .content #resultsBox {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .container .content #resultsBox .movieContainer {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
