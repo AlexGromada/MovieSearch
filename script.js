@@ -12,7 +12,7 @@ async function getMovieInfo(title) {
         if (data.success === false) {
             throw new Error(`API error: ${data.status_message}`);
         }
-movie
+
         data.results
             .filter(movie => movie.title.toLowerCase().includes(title.toLowerCase()))
             .forEach(movie => {
