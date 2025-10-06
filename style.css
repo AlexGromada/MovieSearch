@@ -14,7 +14,7 @@ body {
   margin: 20px auto 100px auto;
   display: block;
 }
-.container .content #filmSearch {
+.container .content #movieSearch {
   width: 600px;
   height: 60px;
   padding: 15px 20px;
@@ -90,7 +90,7 @@ body {
   .container .content .tmdb {
     margin-bottom: 40px;
   }
-  .container .content #filmSearch {
+  .container .content #movieSearch {
     width: 80%;
     margin-bottom: 60px;
     height: 40px;
@@ -103,7 +103,7 @@ body {
   }
 }
 @media (max-width: 500px) {
-  .container .content #filmSearch {
+  .container .content #movieSearch {
     margin-bottom: 30px;
   }
   .container .content #resultsBox {
